@@ -18,6 +18,7 @@ PanelWindow {
 
     property bool isOpen: false
     property bool isWindowActive: false
+    visible: isWindowActive
 
     onIsOpenChanged: {
         if (isOpen) {
@@ -80,8 +81,8 @@ PanelWindow {
                     title: "Desktop Wallpaper"
                 }
                 ListElement {
-                    type: "about"
-                    title: "Archie Info"
+                    type: "music"
+                    title: "Archie music"
                 }
             }
 
@@ -89,7 +90,7 @@ PanelWindow {
                 role: "type"
 
                 DelegateChoice {
-                    roleValue: "about"
+                    roleValue: "music"
                     delegate: Music {}
                 }
 

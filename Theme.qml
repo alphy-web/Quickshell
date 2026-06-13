@@ -12,8 +12,10 @@ FileView {
         id: colors
         property string mainBackground: "#101417"
         property string workspace: "#c9beff"
+        property string backgroundApp: "#201f25"
     }
 
     property alias mainBackground: colors.mainBackground
     property alias workspace: colors.workspace
+    property alias backgroundApp: colors.backgroundApp
 }
