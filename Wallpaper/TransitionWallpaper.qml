@@ -12,6 +12,13 @@ Rectangle {
     radius: 14
     color: ColorScheme.mainBackground
 
+    Behavior on height {
+        NumberAnimation {
+            duration: 500
+            easing.type: Easing.OutBack
+        }
+    }
+
     MouseArea {
         id: mouse
         anchors.fill: parent

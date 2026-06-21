@@ -46,6 +46,13 @@ Rectangle {
             radius: 12
             color: Config.matugenIndex === value ? ColorScheme.secondBackground : ColorScheme.mainBackground
 
+            Behavior on color {
+                ColorAnimation {
+                    duration: 250
+                    easing.type: Easing.BezierSpline
+                }
+            }
+
             Text {
                 anchors.centerIn: parent
                 text: value
