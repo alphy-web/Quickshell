@@ -13,7 +13,7 @@ PanelWindow {
 
     aboveWindows: true
     focusable: true
-    color: Qt.rgba(0, 0, 0, 0.8)
+    color: Qt.rgba(0, 0, 0, 0.3)
 
     Column {
         anchors.left: parent.left
@@ -22,7 +22,7 @@ PanelWindow {
         height: 650
         spacing: 0
 
-        Performance {}
+        Profile {}
         AppLauncher {}
     }
 
